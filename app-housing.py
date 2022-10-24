@@ -12,7 +12,7 @@ df =pd.read_csv(r'housing.csv')
 #add a slider
 price_slider = st.slider('Median House Price', 0, 500001, 200000)
 
-st.write('See more filters in the sidebar')
+st.title('See more filters in the sidebar:')
 
 # add a multi select
 location_filter = st.sidebar.multiselect(
