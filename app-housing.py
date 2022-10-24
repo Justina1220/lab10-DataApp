@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 plt.style.use('seaborn')
 
-st.title('California Housing Data(1990)by\nZiyu Chen')
+st.title('California Housing Data(1990)by Ziyu Chen')
 
 df =pd.read_csv(r'housing.csv')
 
