@@ -1,4 +1,4 @@
-from pickle import BINSTRING
+
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -40,8 +40,8 @@ if income_filter == 'Low':
     df = df[df.median_income <= 2.5]
 elif income_filter == 'High':
     df = df[df.median_income > 4.5]
-else:
-    df = df[(df.median_income > 2.5) and (df.median_income <= 4.5)]
+elif income_filter == 'Medium':
+    df = df[(df.median_income > 2.5) & (df.median_income <= 4.5)]
     
 
 
