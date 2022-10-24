@@ -12,7 +12,7 @@ df =pd.read_csv(r'housing.csv')
 #add a slider
 price_slider = st.slider('Median House Price', 0, 500001, 200000)
 
-st.title('See more filters in the sidebar:')
+st.subheader('See more filters in the sidebar:')
 
 # add a multi select
 location_filter = st.sidebar.multiselect(
@@ -25,8 +25,6 @@ income_filter = st.sidebar.radio(
     'Choose income level',
     ('Low', 'Medium', 'High')
 )
-
-
 
 
 #filter by house value
@@ -50,6 +48,8 @@ st.map(df)
 
 #show the df
 st.write(df)
+
+st.subheader('Histogram of the Median House Value')
 
 #show the population figure
 fig,ax = plt.subplots()
