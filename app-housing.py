@@ -46,9 +46,6 @@ elif income_filter == 'Medium':
 #show on map
 st.map(df)
 
-#show the df
-st.write(df)
-
 st.subheader('Histogram of the Median House Value')
 
 #show the population figure
